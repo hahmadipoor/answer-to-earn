@@ -3,7 +3,7 @@ import { truncate } from '@/utils/helper'
 import { AnswerProp, QuestionProp, RootState } from '@/utils/interfaces'
 import React from 'react'
 import { FaEthereum } from 'react-icons/fa'
-import Identicon from 'react-identicons'
+// import Identicon from 'react-identicons'
 import Moment from 'react-moment'
 import { useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
@@ -70,11 +70,6 @@ const Answers: React.FC<{ answers: AnswerProp[]; questionData: QuestionProp | nu
             </div>
 
             <div className="space-x-2 hidden sm:flex items-center">
-              <Identicon
-                className="h-6 rounded-full bg-slate-600"
-                size={30}
-                string={answer.owner}
-              />
               <p>{truncate({ text: answer.owner, startChars: 4, endChars: 4, maxLength: 11 })}</p>
             </div>
           </div>
@@ -85,7 +80,6 @@ const Answers: React.FC<{ answers: AnswerProp[]; questionData: QuestionProp | nu
             </div>
 
             <div className="space-x-2 flex items-center">
-              <Identicon className="rounded-full bg-slate-600" size={30} string={answer.owner} />
               <p>{truncate({ text: answer.owner, startChars: 4, endChars: 4, maxLength: 11 })}</p>
             </div>
           </div>

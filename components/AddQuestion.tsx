@@ -126,11 +126,7 @@ const AddQuestion: React.FC = () => {
               required
             />
 
-            <button
-              type="submit"
-              className="text-sm bg-blue-600 rounded-full w-[150px] h-[48px] text-white
-              mt-5 hover:bg-blue-700 transition-colors duration-300"
-            >
+            <button type="submit" className="text-sm bg-blue-600 rounded-full w-[150px] h-[48px] text-white mt-5 hover:bg-blue-700 transition-colors duration-300">
               Submit
             </button>
           </form>

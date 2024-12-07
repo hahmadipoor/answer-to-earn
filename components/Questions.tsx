@@ -3,7 +3,7 @@ import { QuestionProp } from '@/utils/interfaces'
 import Link from 'next/link'
 import React from 'react'
 import { FaEthereum } from 'react-icons/fa'
-import Identicon from 'react-identicons'
+//import Identicon from 'react-identicons'
 import { Tags, TagsSm } from './Tags'
 import Moment from 'react-moment'
 
@@ -49,11 +49,6 @@ const Questions: React.FC<{ questions: QuestionProp[] }> = ({ questions }) => {
               </div>
 
               <div className="space-x-2  hidden sm:flex items-center">
-                <Identicon
-                  className="h-6 rounded-full bg-slate-600"
-                  size={30}
-                  string={question.owner}
-                />
                 <p>
                   {truncate({ text: question.owner, startChars: 4, endChars: 4, maxLength: 11 })}
                 </p>
@@ -70,11 +65,6 @@ const Questions: React.FC<{ questions: QuestionProp[] }> = ({ questions }) => {
               </div>
 
               <div className=" space-x-2  flex items-center">
-                <Identicon
-                  className="h-6 rounded-full bg-slate-600"
-                  size={30}
-                  string={question.owner}
-                />
                 <p>
                   {truncate({ text: question.owner, startChars: 4, endChars: 4, maxLength: 11 })}
                 </p>

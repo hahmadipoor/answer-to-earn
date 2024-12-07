@@ -1,7 +1,7 @@
 import { BsCalendar3 } from 'react-icons/bs'
 import { FaEthereum } from 'react-icons/fa'
 import { Tags, TagsSm } from './Tags'
-import Identicon from 'react-identicons'
+//import Identicon from 'react-identicons'
 import React from 'react'
 import { QuestionProp, RootState } from '@/utils/interfaces'
 import { truncate } from '@/utils/helper'
@@ -58,11 +58,6 @@ const Details: React.FC<{ question: QuestionProp | null }> = ({ question }) => {
           </div>
 
           <div className="space-x-2 text-xs hidden sm:flex items-center">
-            <Identicon
-              className="h-6 rounded-full bg-slate-600"
-              size={30}
-              string={question.owner}
-            />
             <p>{truncate({ text: question.owner, startChars: 4, endChars: 4, maxLength: 11 })}</p>
           </div>
         </div>
@@ -70,7 +65,6 @@ const Details: React.FC<{ question: QuestionProp | null }> = ({ question }) => {
 
       <div className="flex flex-col space-y-3 sm:hidden mt-5 text-[#BBBBBB]">
         <div className=" space-x-2 text-xs flex items-center">
-          <Identicon className="h-6 rounded-full bg-slate-600" size={30} string={question.owner} />
           <p>{truncate({ text: question.owner, startChars: 4, endChars: 4, maxLength: 11 })}</p>
         </div>
       </div>
